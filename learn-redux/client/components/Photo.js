@@ -30,7 +30,7 @@ class Photo extends Component {
             <button className="likes" onClick={ this.props.increment.bind(null, index) }>
               &hearts; { post.likes }
             </button>
-            <Link to={`/view/${ post.code }`} className="button ">
+            <Link to={`/view/${ post.code }`} className="button">
               <span className="comment-count">
                 <span className="speech-bubble"></span>
                 { comments[post.code] ? comments[post.code].length : 0 }
